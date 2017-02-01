@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Linkin Park - Tribute Page</title>
+    <title>Michelle Pisters - Porto folio</title>
 
     <!-- Bootstrap Core CSS -->
     <!-- Latest compiled and minified CSS -->
@@ -21,10 +21,10 @@
     <link rel="stylesheet" href="index.css">
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -45,7 +45,7 @@
                 <span class="sr-only">Toggle navigation</span>
                 Menu <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand" href="index.html">Linkin Park - Tribute Page</a>
+            <a class="navbar-brand" href="index.html"></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -69,14 +69,16 @@
 
 <!-- Page Header -->
 <!-- Set your background image for this header on the line below. -->
-<header class="intro-header" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/LinkinParkBerlin2010.jpg/1920px-LinkinParkBerlin2010.jpg')">
+<header class="intro-header" style="background-image: url('img/motherboard.png')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="site-heading">
-                    <h1 id="Title">Linkin Park</h1>
+                    <canvas id="myc" width="750" height="100" style="background-color:transparent">
+                        Your browser does not support the canvas element.
+                    </canvas>
                     <hr class="small">
-                    <span class="subheading">A tribute page of Linkin Park</span>
+                    <h2>Porto folio</h2>
                 </div>
             </div>
         </div>
@@ -134,7 +136,23 @@
 
 <!-- Theme JavaScript -->
 <script src="js/clean-blog.min.js"></script>
+    <script>
+        var canvas = document.getElementById("myc");
+        var context = canvas.getContext('2d');
+        var text ="Michelle Pisters";
+        context.fillStyle = '#6ec982';
+        context.strokeStyle = 'White';
+        context.lineWidth = "3";
+        context.font = 'bolder 90px Sans-serif';
+        context.fillText(text, 10, 80);
+        context.strokeText(text, 10, 80);
 
+        context.fill();
+        context.stroke();
+        context.canvas.css("width", window.innerWidth);
+        context.canvas.css("height", window.innerHeight);
+
+    </script>
 </body>
 
 </html>

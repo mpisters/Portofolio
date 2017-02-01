@@ -13,6 +13,10 @@ h6 {
     font-weight: 800
 }
 
+.navbar-brand {
+    background: url("img/logo2.png") center / contain no-repeat;
+    width: 100px;
+}
 
 .caption,
 .intro-header .page-heading,
@@ -36,7 +40,7 @@ footer .copyright {
 }
 
 #Title{
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size:80px;
     text-align: center;
 }
@@ -179,7 +183,7 @@ hr.small {
 .intro-header .post-heading,
 .intro-header .site-heading {
     padding: 100px 0 50px;
-    color: #008c01;
+    color: #ffffff;
 }
 .intro-header .page-heading h1,
 .intro-header .site-heading h1 {
