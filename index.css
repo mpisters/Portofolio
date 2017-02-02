@@ -10,7 +10,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 800
+    font-weight: 700;
 }
 
 .navbar-brand {
@@ -33,6 +33,12 @@ footer .copyright {
     border-radius: 25px !important;
 }
 
+.highlight {
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 40px;
+    color: #702020;
+}
 .information-button:hover, .information-button:focus  {
     background-color: #008c01;
     color: black;
@@ -40,11 +46,18 @@ footer .copyright {
 }
 
 #Title{
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size:80px;
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size:100px;
     text-align: center;
+    font-weight: 500;
+    color: white;
 }
 
+.site-heading > h2 {
+    color: white;
+    font-size:40px;
+    font-weight: 500;
+}
 body {
     font-family: Lora, 'Times New Roman', serif;
     font-size: 20px;
