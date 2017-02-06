@@ -12,12 +12,10 @@ h5,
 h6 {
     font-weight: 700;
 }
-
 .navbar-brand {
     background: url("img/logo2.png") center / contain no-repeat;
     width: 100px;
 }
-
 .caption,
 .intro-header .page-heading,
 .intro-header .site-heading,
