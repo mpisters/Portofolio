@@ -12,6 +12,15 @@ h5,
 h6 {
     font-weight: 700;
 }
+#submit {
+    border-radius: 5px;
+    background-color: #70c582;
+    color: #333333;
+}
+#submit:hover {
+    background-color: #ffffff;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 .navbar-brand {
     background: url("img/logo2.png") center / contain no-repeat;
     width: 100px;
@@ -19,29 +28,35 @@ h6 {
 .caption,
 .intro-header .page-heading,
 .intro-header .site-heading,
-footer .copyright {
-    text-align: center
-}
-/*#con_profile{*/
-    /*text-align: center;*/
-/*}*/
 
 p {
     text-align: justify;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-/*#con_profile:before{*/
-    /*content: '';*/
-    /*height: 100%;*/
-    /*display: inline-block;*/
-    /*vertical-align: middle;*/
-/*}*/
+
+footer p {
+    color: white;
+    font-weight: 200;
+    font-size: 16px;
+    text-align: left;
+}
+
+footer .form-control {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    text-align: left;
+
+}
+footer h3 {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #70c582;
+    font-weight: 700;
+}
 #profile {
-    /*padding-top:100px;*/
-    /*display: inline-block;*/
-    /*vertical-align: middle;*/
     margin: 30px 20px 5px 20px;
     float:right;
-    height: 500px;
+    height: 400px;
     width: auto;
 }
 .project {
@@ -76,25 +91,12 @@ p {
     background-color : #1e1e1e;
     opacity: 0.9;
 }
-.information-button{
-    background-color: white;
-    font-size: 20px;
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: black;
-    border: solid 2px #008c01;
-    border-radius: 25px !important;
-}
 
 .highlight {
     font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 100;
     font-size: 40px;
     color: #702020;
-}
-.information-button:hover, .information-button:focus  {
-    background-color: #008c01;
-    color: black;
-    border-radius: 25px;
 }
 
 #Title{
@@ -105,10 +107,11 @@ p {
     color: white;
 }
 
-.site-heading > h2 {
+.site-heading h2 {
     color: white;
     font-size:40px;
     font-weight: 500;
+    text-align: center;
 }
 body {
     font-family: Lora, 'Times New Roman', serif;
@@ -134,10 +137,7 @@ p {
 p a {
     text-decoration: underline
 }
-a:focus,
-a:hover {
-    color: #0085A1
-}
+
 a img:focus,
 a img:hover {
     cursor: zoom-in
@@ -364,7 +364,8 @@ hr.small {
     border-bottom-left-radius: 5px
 }
 footer {
-    padding: 50px 0 65px
+    padding: 30px 0 40px;
+    background-color:#702020;
 }
 footer .list-inline {
     margin: 0;
@@ -372,7 +373,15 @@ footer .list-inline {
 }
 footer .copyright {
     font-size: 14px;
-    margin-bottom: 0
+}
+
+footer i {
+    color: white;
+    padding: 10px 0px 10px 0px;
+}
+
+footer i:hover, footer i:focus {
+    color: #70c582;
 }
 .floating-label-form-group {
     font-size: 14px;
@@ -490,7 +499,4 @@ img::-moz-selection {
     }
 }
 
-footer {
-    background-color:#702020;
-}
 
