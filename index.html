@@ -39,23 +39,26 @@
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#dropdownMenu">
                 <span class="sr-only">Toggle navigation</span>
-                Menu <i class="fa fa-bars"></i>
+                <i class="fa fa-bars fa-2x"></i>
             </button>
             <a class="navbar-brand" href="index.html"></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse" id="dropdownMenu">
             <ul class="nav navbar-nav navbar-right">
                 <li>
                     <a href="index.html">Home</a>
                 </li>
-                <li>
-                    <a href="#general">General Information</a>
+                <li class="page-scroll">
+                    <a href="#about">Info About Me</a>
                 </li>
-                <li>
+                <li class="page-scroll">
+                    <a href="#projects">The Projects</a>
+                </li>
+                <li class="page-scroll">
                     <a href="#contact">Contact</a>
                 </li>
             </ul>
@@ -73,9 +76,6 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="site-heading">
                     <h1 id="Title">Michelle Pisters</h1>
-                    <!--<canvas id="myc" width="750" height="100" style="background-color:transparent">-->
-                        <!--Your browser does not support the canvas element.-->
-                    <!--</canvas>-->
                     <hr class="small">
                     <h2>Porto folio</h2>
                 </div>
@@ -85,7 +85,7 @@
 </header>
 
 <!-- Main Content -->
-<div id="general" class="container">
+<div id="about" class="container">
     <div class="row">
         <div class="col-xs-12 col-md-10 col-md-offset-1">
             <h1><span class="highlight">INFO</span> ABOUT ME</h1>
@@ -105,7 +105,7 @@
             </p>
         </div>
     </div>
-        <div class="row">
+        <div id="projects" class="row projects">
             <div class="col-xs-12 col-lg-12 col-md-12">
                 <div class="row">
             <h1><span class="highlight">THE</span> PROJECTS</h1>
@@ -164,42 +164,43 @@
 <!-- TODO put copyright at the bottom of DIV-->
 <!-- TODO make nice menu button -->
  <!--Footer -->
-<footer>
+<footer id="contact">
     <div id="copyright" class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 col-md-offset-2">
                 <h3>Contact Me</h3>
-                <p>If you have interesting projects or just want contact with me you can email me:</p>
-                <form>
+                <p>If you have interesting projects or just want to contact me you can email me:</p>
+                <form name="contact" id="contactForm" novalidate>
                     <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Name">
+                        <input type="text" class="form-control" id="name" placeholder="Name" required data-validation-required-message="Please enter your name.">
+                        <p class="help-block text-danger"></p>
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Email Address">
+                        <input type="email" class="form-control" id="email" placeholder="Email Address" required data-validation-required-message="Please enter your email address.">
+                        <p class="help-block text-danger"></p>
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Phone Number">
+                        <input type="text" class="form-control" id="phone" placeholder="Phone Number" required data-validation-required-message="Please enter your phone number.">
+                        <p class="help-block text-danger"></p>
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Message">
+                        <input type="text" class="form-control" id="message" placeholder="Message" required data-validation-required-message="Please enter your message.">
                     </div>
+                    <div id="succes"></div>
                     <button id="submit" type="submit" class="btn btn-secondary">Send</button>
                 </form>
             </div>
-            <div class="col-md-4 col-md-offset-4">
+            <div class="col-md-4 col-md-offset-1">
                 <h3>Around the Web</h3>
                 <ul class="list-inline">
                     <li>
-                        <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+                        <a href="https://www.facebook.com/michelle.pisters" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
                     </li>
                     <li>
-                        <a href="#" class="btn-social btn-outline"><i class="fa fa-google-plus-official fa-2x"></i></a>
+                        <a href="https://github.com/mpisters"  target="_blank"><i class="fa fa-github fa-2x"></i></a>
                     </li>
                     <li>
-                        <a href="#" class="btn-social btn-outline"><i class="fa fa-github fa-2x"></i></a>
-                    </li>
-                    <li>
-                        <a href="#" class="btn-social btn-outline"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                        <a href="https://www.linkedin.com/in/michellepisters?trk=hp-identity-name"  target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
                     </li>
                 </ul>
                 <p class="copyright">Copyright &copy; Porto folio | Michelle Pisters - 2017</p>
@@ -208,6 +209,8 @@
         </div>
     </div>
 </footer>
+<script src="contact.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </body>
 
 </html>
