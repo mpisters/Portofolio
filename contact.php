@@ -39,8 +39,8 @@ $body .= "\n";
 
 
 if($name != "" && $email != "" && $message != ""){
-	mail($emailTo, $subject, $body, "From: <$email>");
+	mail($emailTo, $subject, $body, "From: $name<$email>");
 } else {
-	echo "<alert>No success</alert>";
+	echo "Try again";
 }
 ?>
